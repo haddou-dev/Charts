@@ -4,18 +4,26 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+ul {
+  list-style-type: none;
+}
 :root {
   --primary: #212a3e;
   --white: #ffffff;
 }
-
+.box {
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px #f5f5f5;
+  padding: 0.6rem;
+}
 .container {
   padding: 1rem;
 }
 
 .first_row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr;
   gap: 0.5rem;
 }
 // Box 1 :
@@ -111,7 +119,6 @@
   padding: 0.2rem;
 }
 .TEByMonths {
-  background-color: brown;
 }
 .TEByMonths_data {
   display: flex;
@@ -119,10 +126,22 @@
 }
 
 .Paid_Unpaid {
-  background-color: orange;
+  display: flex;
+  gap: 1rem;
+}
+.Paid_Unpaid_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 .Monthly_card {
-  background-color: purple;
+  background-color: lightblue;
+}
+.listMonth {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
 }
 .EarnedCourses_card {
   background-color: pink;
@@ -132,12 +151,6 @@
 }
 .third_row {
   background-color: red;
-}
-.box {
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 10px 10px 20px #f5f5f5;
-  padding: 0.6rem;
 }
 
 .circle-wrap {
