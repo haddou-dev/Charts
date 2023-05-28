@@ -1,0 +1,143 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Charts</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first_row">
+        <div class="card1 box">
+          <img src="./img/logo.png" alt="logo" class="logo_card-logo" />
+          <div class="logo_card-info">
+            <p class="red_title">Other Level's</p>
+            <p class="heading_logo">Sale Performance Metrics</p>
+            <p class="date_logo">2022</p>
+          </div>
+        </div>
+        <div class="box TotalEarnings">
+          <div class="TotalEarnings_head">
+            <div class="TotalEarnings_head-title">
+              <img src="./img/euro.png" alt="euro" class="img_euro" />
+              <p>Total Earnings</p>
+            </div>
+            <div class="TotalEarnings_head-Numbers">
+              <h3 class="big_number">20,606,000,000</h3>
+              <p class="small_para">Egyptain Pounds</p>
+            </div>
+          </div>
+          <hr />
+          <div class="TotalEarnings_bottom">
+            <div class="TotalEarnings_bottom-title">
+              <p>Total Paid Calls</p>
+            </div>
+            <div class="TotalEarnings_head-Calls">
+              <div>
+                <h3>1.198</h3>
+                <p>Call</p>
+              </div>
+              <img
+                src="./img/ecouteurs.png"
+                alt="ecouteurs"
+                class="img_ecouteurs"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="box consultant">
+          <div>
+            <h3 class="big_number">Consultant</h3>
+            <p class="small_para">Sales Revenue</p>
+          </div>
+          <ul class="list_items">
+            <li class="item">
+              <p class="small_para">2,502,000,000</p>
+              <p class="small_para">Rony</p>
+            </li>
+            <li class="item">
+              <p class="small_para">2,502,000,000</p>
+              <p class="small_para">amin</p>
+            </li>
+            <li class="item">
+              <p class="small_para">2,502,000,000</p>
+              <p class="small_para">karim</p>
+            </li>
+            <li class="item">
+              <p class="small_para">2,502,000,000</p>
+              <p class="small_para">hamid</p>
+            </li>
+            <li class="item">
+              <p class="small_para">2,502,000,000</p>
+              <p class="small_para">ahmed</p>
+            </li>
+          </ul>
+        </div>
+        <div class="box TEByMonths">
+          <h3 class="big_number">Total Earning by months</h3>
+          <div class="Chart_container">
+            <canvas id="line-chart" width="800" height="450"></canvas>
+          </div>
+          <div class="TEByMonths_data">
+            <div>
+              <h3 class="big_number">Highest</h3>
+              <p class="small_para">monthly Revenue</p>
+              <h3 class="big_number">20,606,00</h3>
+            </div>
+            <div>
+              <h3 class="big_number">Average</h3>
+              <p class="small_para">monthly Revenue</p>
+              <h3 class="big_number">125,000</h3>
+            </div>
+            <div>
+              <h3 class="big_number">Lowrest</h3>
+              <p class="small_para">monthly Revenue</p>
+              <h3 class="big_number">60,000</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box Paid_Unpaid">
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask half">
+                <div class="fill green_bg"></div>
+              </div>
+              <div class="inside-circle green_bg"> 75% </div>
+              <div class="mask full">
+                <div class="fill"></div>
+             </div>
+            </div>
+          </div>
+          <hr />
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask half">
+                <div class="fill pink_bg"></div>
+              </div>
+              <div class="inside-circle pink_bg"> 75% </div>
+              <div class="mask full">
+                <div class="fill"></div>
+             </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="box Monthly_card"></div>
+        <div class="box EarnedCourses_card"></div>
+      </div>
+      <div class="Second_row"></div>
+      <div class="third_row"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
