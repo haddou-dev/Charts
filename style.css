@@ -26,6 +26,17 @@ ul {
   grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr;
   gap: 0.5rem;
 }
+
+
+.Chart_container {
+  width: 400px;
+  height: 400px;
+}
+.threeChart {
+  display: flex;
+  gap: 3rem;
+}
+
 // Box 1 :
 
 .card1 {
@@ -109,10 +120,10 @@ ul {
 .list_items {
   margin: 0.8rem;
 }
-.Chart_container {
-  /* width: 40rem; */
+/* .Chart_container {
+  width: 40rem;
   height: 10rem;
-}
+} */
 .item {
   display: flex;
   gap: 2rem;
